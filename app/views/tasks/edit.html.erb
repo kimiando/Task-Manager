@@ -1,2 +1,7 @@
-<h1>Edit: <%= @task.title %></h1>
-<%= render "form", task: @task %>
+<div class="center">
+  <h1>Edit: <%= @task.title %></h1>
+  <button type="button" class="btn btn-primary btn-lg"><%= link_to "Back to the list", tasks_path%></button>
+</div>
+<div class="form-container">
+  <%= render "form", task: @task %>
+</div>
