@@ -1,0 +1,11 @@
+.show-task{
+  border: 1px solid;
+  width: 20%;
+  justify-items: center;
+  display: grid;
+  padding-bottom: 10px;
+}
+.show-page{
+  justify-items: center;
+  display: grid;
+}

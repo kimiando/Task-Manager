@@ -1,7 +1,9 @@
-<%= link_to "Edit Task", edit_task_path(@task)%>
-<h2>Task: <%= @task.title %></h2>
-<p>Details: <%= @task.details %></p>
-<p>Completed: <%= @task.completed %></p>
-<br>
-<hr>
-<%= link_to "Back to the list", tasks_path%>
+<div class="show-page">
+  <div class="show-task">
+    <h1><%= @task.title %></h1>
+    <button type="button" class="btn btn-primary btn-lg">  <%= link_to "Edit Task", edit_task_path(@task)%></button>
+    <button type="button" class="btn btn-primary btn-lg"><%= link_to "Back to the list", tasks_path%></button>
+    <p><%= @task.details %></p>
+    <p>status: <%= @task.completed %></p>
+  </div>
+</div>

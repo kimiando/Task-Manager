@@ -1,11 +1,19 @@
-<%= form_with model: task do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <% if !task.new_record? %>
-  <%= f.check_box(:completed) %>
-  <%= f.label(:completed, "Complete?") %>
+<div class="form-container">
+  <%= form_with model: task do |f| %>
+    <div class="title-form">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="details-form">
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+    </div>
+    <% if !task.new_record? %>
+      <%= f.check_box(:completed) %>
+      <%= f.label(:completed, "Complete?") %>
+    <% end %>
+    <div class="submit">
+      <%= f.submit "Update Task" %>
+    </div>
   <% end %>
-  <%= f.submit "Update Task" %>
-<% end %>
+</div>
