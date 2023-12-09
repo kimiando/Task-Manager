@@ -27,16 +27,16 @@
   margin-top: 15px;
 }
 .form-container{
-  /* border: 1px solid;
   justify-content: flex-start;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center; */
-  justify-content: flex-end;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-content: center;
   align-items: center;
+  border: 1px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  width: 20%;
+  border-radius: 12px;
 }

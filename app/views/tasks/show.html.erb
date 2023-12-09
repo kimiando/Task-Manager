@@ -1,8 +1,10 @@
 <div class="show-page">
   <div class="show-task">
     <h1><%= @task.title %></h1>
-    <button type="button" class="btn btn-primary btn-lg">  <%= link_to "Edit Task", edit_task_path(@task)%></button>
-    <button type="button" class="btn btn-primary btn-lg"><%= link_to "Back to the list", tasks_path%></button>
+    <div class="button">
+      <button type="button" class="btn btn-primary btn-lg">  <%= link_to "Edit Task", edit_task_path(@task)%></button>
+      <button type="button" class="btn btn-primary btn-lg"><%= link_to "Back to the list", tasks_path%></button>
+    </div>
     <p><%= @task.details %></p>
     <p>status: <%= @task.completed %></p>
   </div>
