@@ -2,8 +2,11 @@
   <div class="show-task">
     <h1><%= @task.title %></h1>
     <div class="button">
-      <button type="button" class="btn btn-primary btn-lg">  <%= link_to "Edit Task", edit_task_path(@task)%></button>
-      <button type="button" class="btn btn-primary btn-lg"><%= link_to "Back to the list", tasks_path%></button>
+      <button class="button-45" role="button"><%= link_to "Edit Task", edit_task_path(@task)%></button>
+      <button class="button-45" role="button"><%= link_to tasks_path do %>
+          <i class="fas fa-list"></i>
+        <% end %>
+      </button>
     </div>
     <p><%= @task.details %></p>
     <p>status: <%= @task.completed %></p>

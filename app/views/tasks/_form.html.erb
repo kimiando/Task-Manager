@@ -2,19 +2,21 @@
 <%= form_with model: task do |f| %>
   <div class="title-form">
     <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: 'text-field' %>
   </div>
   <div class="title-form">
     <%= f.label :details %>
-    <%= f.text_field :details %>
+    <%= f.text_field :details, class: 'text-field' %>
   </div>
   <% if !task.new_record? %>
     <%= f.check_box(:completed) %>
     <%= f.label(:completed, "Complete?") %>
   <% end %>
   <div class="submit">
-    <button type="button" class="btn btn-primary btn-lg"><%= link_to "Back to the list", tasks_path%></button>
-    <%= f.submit "Save" %>
-  </div>
-<% end %>
-<%# </div> %>
+    <button class="button-45" role="button"><%= link_to tasks_path do %>
+        <i class="fas fa-list"></i>
+      <% end %>
+      <%= f.button "Save", class: 'button-38', type: 'submit' %>
+    </div>
+  <% end %>
+  <!-- HTML !-->

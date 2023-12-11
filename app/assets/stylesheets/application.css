@@ -14,22 +14,14 @@
  *= require_self
  */
 body {
-  background-color: whitesmoke;
+  background-color: #FFDBAA;
+  font-family: "kalnia";
 }
 a{
   text-decoration: none;
   color: black;
 }
-.center{
-  justify-content: flex-end;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-top: 3%;
-}
+
 .button{
   margin-bottom: 10px;
 }
