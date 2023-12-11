@@ -10,6 +10,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px #fee6e383;
   overflow: hidden;
+
   h1{
     color: #E48586;
   }
@@ -32,7 +33,7 @@
   border: 1px solid #FEE0E0;
   border-radius: 11px;
   box-sizing: border-box;
-  color: #D33A2C;
+  color: #f5948b;
   cursor: pointer;
   display: flex;
   font-size: 1rem;
