@@ -71,7 +71,18 @@
   padding-right: 48px;
   padding-left: 48px;
   font-family: "monserrat";
-  font-size: 1em;
+  font-size: 1# Pro icons styles
+  npm i --save @fortawesome/pro-solid-svg-icons
+  npm i --save @fortawesome/pro-regular-svg-icons
+  npm i --save @fortawesome/pro-light-svg-icons
+  npm i --save @fortawesome/pro-thin-svg-icons
+  npm i --save @fortawesome/pro-duotone-svg-icons
+  npm i --save @fortawesome/sharp-solid-svg-icons
+  npm i --save @fortawesome/sharp-regular-svg-icons
+  npm i --save @fortawesome/sharp-light-svg-icons
+  npm i --save @fortawesome/sharp-thin-svg-icons
+
+  em;
   }
   .button-38:hover {
   background-color: #FFDBAA;
